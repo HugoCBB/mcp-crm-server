@@ -27,7 +27,10 @@ def create_user( input: CreateUserInput):
         return f"Usuario {newUser.name} criado com ID {newUser.id}"
     
     except Exception as e:
+        db.rollback()
         print(e)
+    finally:
+        db.close()
 
 @mcp.tool
 def greet(name: str) -> str:
