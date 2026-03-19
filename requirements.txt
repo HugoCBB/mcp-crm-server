@@ -1,5 +1,6 @@
 fastmcp
 mcp
+email-validator
 sqlalchemy
 python-dotenv
 faiss-cpu
