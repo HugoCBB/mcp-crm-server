@@ -16,7 +16,6 @@ mcp = FastMCP("crm-assistente")
 
 init_db()
 
-# Initialize Vector Store
 vector_store = VectorStore(dimension=384)
 
 
