@@ -15,13 +15,8 @@ mcp = FastMCP("crm-assistente")
 
 init_db()
 
-<<<<<<< HEAD
-=======
 # Inicializa o índice vetorial
->>>>>>> bf36750 (fix: Modificado a syntax em alguns pontos)
 vector_store = VectorStore(dimension=384)
-
-
 
 @mcp.tool
 def create_user(name: str, email: str, description: str) -> int:
